@@ -1,16 +1,16 @@
 title: MyAITask
 description: AI productivity hub: free tools, templates, affiliate picks, and paid guest posts.
-url: https://example.com
+url: https://myaitask.com
+
 theme: minima
 markdown: kramdown
+
+# Output
+permalink: /:categories/:year/:month/:day/:title/
 paginate: 10
 paginate_path: "/page:num/"
+
 plugins:
   - jekyll-paginate
   - jekyll-sitemap
   - jekyll-feed
-
-minima:
-  skin: auto
-
-permalink: /:categories/:year/:month/:day/:title/
