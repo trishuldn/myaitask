@@ -1,299 +1,92 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
+  <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>MyAITask – AI Tools, Templates & Guest Posts</title>
-  <meta name="description" content="MyAITask is your AI productivity hub: free tools, affiliate picks, digital templates, and paid guest post publishing. Zero fluff, just outcomes." />
-  <link rel="preconnect" href="https://fonts.googleapis.com"/>
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet"/>
-  <!-- Tailwind via CDN for zero-build MVP -->
+  <meta name="description" content="AI productivity hub: free tools, templates, curated SaaS picks, and paid guest post publishing." />
   <script src="https://cdn.tailwindcss.com"></script>
-  <meta name="robots" content="index, follow"/>
-  <link rel="icon" href="/favicon.ico" />
-  
-  <!-- Open Graph -->
-  <meta property="og:title" content="MyAITask – AI Tools, Templates & Guest Posts" />
-  <meta property="og:description" content="AI tools hub with freebies, templates, and sponsored publishing. Monetization-ready." />
-  <meta property="og:type" content="website" />
-  <meta property="og:url" content="https://myaitask.com/" />
-  <meta property="og:image" content="https://myaitask.com/og-image.png" />
-  
-  <!-- JSON-LD Schema -->
-  <script type="application/ld+json">
-  {
-    "@context": "https://schema.org",
-    "@type": "WebSite",
-    "name": "MyAITask",
-    "url": "https://myaitask.com/",
-    "potentialAction": {
-      "@type": "SearchAction",
-      "target": "https://myaitask.com/?q={search_term_string}",
-      "query-input": "required name=search_term_string"
-    }
-  }
-  </script>
-  <style>
-    body { font-family: Inter, ui-sans-serif, system-ui, -apple-system, Segoe UI, Roboto, Helvetica, Arial, "Apple Color Emoji", "Segoe UI Emoji"; }
-    .glass { backdrop-filter: blur(8px); background: rgba(255,255,255,0.7); }
-  </style>
+  <meta name="robots" content="index,follow" />
 </head>
 <body class="bg-gray-50 text-gray-900">
-  <!-- Header -->
-  <header class="sticky top-0 z-50 bg-white/80 backdrop-blur border-b border-gray-100">
-    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-      <div class="flex h-14 items-center justify-between">
-        <a href="#" class="font-extrabold text-xl">MyAI<span class="text-indigo-600">Task</span></a>
-        <nav class="hidden md:flex gap-6 text-sm font-medium">
-          <a href="#resources" class="hover:text-indigo-600">Resources</a>
-          <a href="#products" class="hover:text-indigo-600">Digital Products</a>
-          <a href="#tools" class="hover:text-indigo-600">Free Tools</a>
-          <a href="#guest" class="hover:text-indigo-600">Write for Us</a>
-          <a href="#newsletter" class="hover:text-indigo-600">Newsletter</a>
-        </nav>
-      </div>
-    </div>
-  </header>
+<header class="sticky top-0 z-40 bg-white/80 backdrop-blur border-b">
+  <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-14 flex items-center justify-between">
+    <a class="font-extrabold text-xl" href="/">MyAI<span class="text-indigo-600">Task</span></a>
+    <nav class="hidden md:flex gap-6 text-sm font-semibold">
+      <a href="/resources/">Resources</a>
+      <a href="/products/">Products</a>
+      <a href="/write-for-us/">Write for Us</a>
+      <a href="/blog/">Blog</a>
+      <a href="/contact/">Contact</a>
+    </nav>
+  </div>
+</header>
 
-  <!-- Hero -->
-  <section class="relative isolate overflow-hidden">
-    <div class="absolute inset-0 -z-10 bg-gradient-to-br from-indigo-50 via-white to-cyan-50"></div>
-    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16 sm:py-24">
-      <div class="grid lg:grid-cols-2 gap-10 items-center">
-        <div>
-          <h1 class="text-4xl sm:text-5xl font-extrabold leading-tight">AI Productivity Hub that actually ships revenue.</h1>
-          <p class="mt-4 text-lg text-gray-700">Free tools, battle-tested templates, curated SaaS picks, and paid guest-post publishing. Zero dev cost, zero fluff.</p>
-          <div class="mt-8 flex gap-3">
-            <a href="#guest" class="inline-flex items-center rounded-xl bg-indigo-600 px-5 py-3 text-white font-semibold shadow hover:bg-indigo-700">Publish a Guest Post</a>
-            <a href="#resources" class="inline-flex items-center rounded-xl border border-gray-300 px-5 py-3 font-semibold hover:bg-gray-100">Explore Tools</a>
-          </div>
-          <div class="mt-6 text-xs text-gray-500">UPI/Cards via Razorpay • SSL secured • Instant confirmation</div>
-        </div>
-        <div class="glass rounded-2xl p-6 shadow-lg">
-          <h3 class="text-lg font-semibold">Quick Buy: "100 AI Social Media Prompts"</h3>
-          <p class="text-sm text-gray-600 mt-2">Plug-and-play prompts for Reels, carousels, and captions. Ship faster.</p>
-          <!-- Razorpay Payment Button (replace data-payment_button_id) -->
-          <form>
-            <script src="https://checkout.razorpay.com/v1/payment-button.js" data-payment_button_id="REPLACE_WITH_YOUR_BUTTON_ID" async> </script>
-          </form>
-          <p class="mt-2 text-xs text-gray-500">Test mode first in Razorpay, then swap to Live button ID.</p>
-        </div>
+<section class="bg-gradient-to-br from-indigo-50 via-white to-cyan-50">
+  <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16 grid lg:grid-cols-2 gap-10 items-center">
+    <div>
+      <h1 class="text-4xl sm:text-5xl font-extrabold leading-tight">AI Productivity hub that actually ships revenue.</h1>
+      <p class="mt-4 text-lg text-gray-700">Free tools, battle-tested templates, curated SaaS picks, and paid guest-post publishing.</p>
+      <div class="mt-8 flex gap-3">
+        <a href="/write-for-us/" class="rounded-xl bg-indigo-600 text-white px-5 py-3 font-semibold shadow hover:bg-indigo-700">Publish a Guest Post</a>
+        <a href="/resources/" class="rounded-xl border px-5 py-3 font-semibold hover:bg-gray-100">Explore Tools</a>
       </div>
+      <p class="mt-3 text-xs text-gray-500">UPI/Cards via Razorpay • SSL secured • Instant confirmation</p>
     </div>
-  </section>
-
-  <!-- Resources (Affiliate Hub) -->
-  <section id="resources" class="py-16 border-t border-gray-100 bg-white">
-    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-      <div class="flex items-end justify-between">
-        <h2 class="text-2xl font-bold">Recommended AI & Marketing Tools</h2>
-        <span class="text-sm text-gray-500">We may earn affiliate commissions.</span>
-      </div>
-      <div class="mt-8 grid sm:grid-cols-2 lg:grid-cols-3 gap-6">
-        <!-- Card -->
-        <a href="#" rel="nofollow sponsored" class="block rounded-2xl border p-5 hover:shadow">
-          <div class="flex items-center gap-3">
-            <div class="h-10 w-10 rounded-lg bg-indigo-100"></div>
-            <div>
-              <div class="font-semibold">Canva Pro</div>
-              <div class="text-sm text-gray-600">Design anything fast. Templates galore.</div>
-            </div>
-          </div>
-          <div class="mt-4 text-sm text-indigo-600 font-semibold">Grab a free trial →</div>
-        </a>
-        <!-- Duplicate cards as needed -->
-        <a href="#" rel="nofollow sponsored" class="block rounded-2xl border p-5 hover:shadow">
-          <div class="flex items-center gap-3">
-            <div class="h-10 w-10 rounded-lg bg-indigo-100"></div>
-            <div>
-              <div class="font-semibold">SEMrush</div>
-              <div class="text-sm text-gray-600">SEO research, content ideas, PPC intel.</div>
-            </div>
-          </div>
-          <div class="mt-4 text-sm text-indigo-600 font-semibold">Start free →</div>
-        </a>
-        <a href="#" rel="nofollow sponsored" class="block rounded-2xl border p-5 hover:shadow">
-          <div class="flex items-center gap-3">
-            <div class="h-10 w-10 rounded-lg bg-indigo-100"></div>
-            <div>
-              <div class="font-semibold">Grammarly</div>
-              <div class="text-sm text-gray-600">Fix grammar, tone, clarity with AI.</div>
-            </div>
-          </div>
-          <div class="mt-4 text-sm text-indigo-600 font-semibold">Try it →</div>
-        </a>
-      </div>
-    </div>
-  </section>
-
-  <!-- Digital Products -->
-  <section id="products" class="py-16 bg-gray-50">
-    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-      <h2 class="text-2xl font-bold">Digital Products</h2>
-      <div class="mt-8 grid sm:grid-cols-2 lg:grid-cols-3 gap-6">
-        <!-- Product Card Example -->
-        <div class="rounded-2xl border bg-white p-6">
-          <div class="h-36 rounded-xl bg-gradient-to-br from-indigo-50 to-cyan-50"></div>
-          <h3 class="mt-4 font-semibold">100 AI Social Media Prompts (PDF)</h3>
-          <p class="text-sm text-gray-600 mt-1">Captions, hooks, CTA frameworks. Save hours.</p>
-          <div class="mt-3 font-bold">₹299</div>
-          <!-- Razorpay Payment Button per product -->
-          <form class="mt-3">
-            <script src="https://checkout.razorpay.com/v1/payment-button.js" data-payment_button_id="REPLACE_WITH_PRODUCT_BUTTON_ID" async> </script>
-          </form>
-        </div>
-        <!-- Add more products by duplicating the card -->
-      </div>
-    </div>
-  </section>
-
-  <!-- Free Tools (static placeholders for MVP) -->
-  <section id="tools" class="py-16 bg-white">
-    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-      <h2 class="text-2xl font-bold">Free Tools</h2>
-      <div class="mt-6 grid md:grid-cols-2 gap-6">
-        <!-- Tool 1: Idea Generator (client-only MVP) -->
-        <div class="rounded-2xl border p-6 bg-gray-50">
-          <h3 class="font-semibold">Blog Idea Generator</h3>
-          <p class="text-sm text-gray-600">Enter a topic → get 10 headline ideas (client-side MVP).</p>
-          <div class="mt-3 flex gap-2">
-            <input id="idea-topic" class="flex-1 rounded-lg border px-3 py-2" placeholder="e.g., AI for Restaurants" />
-            <button onclick="genIdeas()" class="rounded-lg bg-indigo-600 text-white px-4 py-2 font-semibold">Generate</button>
-          </div>
-          <ul id="idea-list" class="mt-4 list-disc pl-5 text-sm text-gray-700"></ul>
-        </div>
-        <!-- Tool 2: Text Cleaner -->
-        <div class="rounded-2xl border p-6 bg-gray-50">
-          <h3 class="font-semibold">Text Cleaner</h3>
-          <p class="text-sm text-gray-600">Strip extra spaces/line breaks. One click.</p>
-          <textarea id="text-in" class="mt-3 w-full h-32 rounded-lg border p-3" placeholder="Paste text..."></textarea>
-          <div class="mt-2 flex gap-2">
-            <button onclick="cleanText()" class="rounded-lg bg-indigo-600 text-white px-4 py-2 font-semibold">Clean</button>
-            <button onclick="copyOut()" class="rounded-lg border px-4 py-2 font-semibold">Copy</button>
-          </div>
-          <textarea id="text-out" class="mt-3 w-full h-32 rounded-lg border p-3" placeholder="Output..."></textarea>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- Guest Posts -->
-  <section id="guest" class="py-16 bg-gray-50">
-    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-      <h2 class="text-2xl font-bold">Write for Us / Guest Post Publishing</h2>
-      <p class="mt-2 text-gray-700">We accept high-quality posts in AI, productivity, SaaS, and marketing. Turnaround 48–72h. Do-follow link in author bio. No casino/betting/adult/crypto-casino.</p>
-      <div class="mt-6 grid md:grid-cols-2 gap-6">
-        <div class="rounded-2xl border bg-white p-6">
-          <h3 class="font-semibold">Standard Publish</h3>
-          <ul class="mt-2 text-sm text-gray-600 list-disc pl-5">
-            <li>1 post up to 1200 words</li>
-            <li>1 do-follow link in bio</li>
-            <li>24–72h publishing window</li>
-          </ul>
-          <div class="mt-3 font-bold">₹2,999</div>
-          <form class="mt-3">
-            <script src="https://checkout.razorpay.com/v1/payment-button.js" data-payment_button_id="REPLACE_WITH_GUEST_STANDARD_ID" async> </script>
-          </form>
-        </div>
-        <div class="rounded-2xl border bg-white p-6">
-          <h3 class="font-semibold">Premium Publish</h3>
-          <ul class="mt-2 text-sm text-gray-600 list-disc pl-5">
-            <li>Up to 1800 words</li>
-            <li>2 do-follow links (bio + contextual)</li>
-            <li>Priority publishing (24–48h)</li>
-          </ul>
-          <div class="mt-3 font-bold">₹4,999</div>
-          <form class="mt-3">
-            <script src="https://checkout.razorpay.com/v1/payment-button.js" data-payment_button_id="REPLACE_WITH_GUEST_PREMIUM_ID" async> </script>
-          </form>
-        </div>
-      </div>
-      <p class="mt-4 text-xs text-gray-500">After payment, you’ll receive an email with a secure upload link. Refunds only if we reject for policy violations.</p>
-    </div>
-  </section>
-
-  <!-- Newsletter -->
-  <section id="newsletter" class="py-16 bg-white">
-    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-      <div class="rounded-2xl border p-8 bg-gray-50">
-        <h2 class="text-2xl font-bold">Weekly "AI Ops" Newsletter</h2>
-        <p class="mt-2 text-gray-700">One email. High-signal tactics. No spam.</p>
-        <!-- Replace action with your Mailchimp/Brevo form endpoint -->
-        <form action="#" method="post" class="mt-4 flex gap-2 max-w-lg">
-          <input name="email" type="email" required class="flex-1 rounded-lg border px-3 py-3" placeholder="Enter your email" />
-          <button class="rounded-lg bg-indigo-600 text-white px-5 py-3 font-semibold">Subscribe</button>
+    <div class="rounded-2xl p-6 bg-white/70 shadow">
+      <h3 class="text-lg font-semibold">Quick Buy: "100 AI Social Media Prompts" (PDF)</h3>
+      <p class="text-sm text-gray-600 mt-1">Captions, hooks, frameworks. Ship faster.</p>
+      <div class="mt-3">
+        <form>
+          <script src="https://checkout.razorpay.com/v1/payment-button.js" data-payment_button_id="REPLACE_PB_PROMPTS" async> </script>
         </form>
-        <p class="mt-2 text-xs text-gray-500">We respect your privacy. Unsubscribe anytime.</p>
+      </div>
+      <p class="mt-2 text-xs text-gray-500">Run in Test Mode first, then swap to Live Button ID.</p>
+    </div>
+  </div>
+</section>
+
+<section class="py-16 bg-white border-t">
+  <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+    <h2 class="text-2xl font-bold">Latest from the Blog</h2>
+    <div class="mt-6 grid md:grid-cols-2 gap-6">
+      <article class="rounded-2xl border bg-gray-50 p-6">
+        <h3 class="font-semibold"><a class="text-indigo-600" href="/blog/">Read the blog →</a></h3>
+        <p class="text-sm text-gray-600 mt-1">We publish AI + productivity tactics regularly.</p>
+      </article>
+      <article class="rounded-2xl border bg-gray-50 p-6">
+        <h3 class="font-semibold"><a class="text-indigo-600" href="/products/">See Products →</a></h3>
+        <p class="text-sm text-gray-600 mt-1">Templates and PDFs you can deploy today.</p>
+      </article>
+    </div>
+  </div>
+</section>
+
+<footer class="py-10 bg-white border-t">
+  <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-sm">
+    <div class="grid md:grid-cols-3 gap-6">
+      <div>
+        <div class="font-bold">MyAITask</div>
+        <p class="mt-2 text-gray-600">Operate lean. Monetize fast.</p>
+      </div>
+      <div>
+        <div class="font-semibold">Legal</div>
+        <ul class="mt-2 space-y-2">
+          <li><a href="/privacy/">Privacy Policy</a></li>
+          <li><a href="/terms/">Terms & Conditions</a></li>
+          <li><a href="/refunds/">Refund Policy</a></li>
+        </ul>
+      </div>
+      <div>
+        <div class="font-semibold">Contact</div>
+        <ul class="mt-2 space-y-2">
+          <li>Email: <a href="mailto:hello@myaitask.com">hello@myaitask.com</a></li>
+        </ul>
       </div>
     </div>
-  </section>
-
-  <!-- Footer -->
-  <footer class="py-10 border-t bg-white">
-    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-      <div class="grid md:grid-cols-3 gap-6 text-sm">
-        <div>
-          <div class="font-bold">MyAITask</div>
-          <p class="mt-2 text-gray-600">Operate lean. Monetize fast. Iterate weekly.</p>
-        </div>
-        <div>
-          <div class="font-semibold">Legal</div>
-          <ul class="mt-2 space-y-2">
-            <li><a class="hover:text-indigo-600" href="#">Privacy Policy</a></li>
-            <li><a class="hover:text-indigo-600" href="#">Terms & Conditions</a></li>
-            <li><a class="hover:text-indigo-600" href="#">Refund Policy</a></li>
-          </ul>
-        </div>
-        <div>
-          <div class="font-semibold">Contact</div>
-          <ul class="mt-2 space-y-2">
-            <li>Email: <a class="hover:text-indigo-600" href="mailto:hello@myaitask.com">hello@myaitask.com</a></li>
-            <li>Twitter: <a class="hover:text-indigo-600" href="#">@myaitask</a></li>
-          </ul>
-        </div>
-      </div>
-      <p class="mt-6 text-xs text-gray-500">© <span id="y"></span> MyAITask. All rights reserved.</p>
-    </div>
-  </footer>
-
-  <script>
-    // Utilities
-    document.getElementById('y').textContent = new Date().getFullYear();
-
-    function genIdeas(){
-      const topic = (document.getElementById('idea-topic').value || '').trim();
-      const out = document.getElementById('idea-list');
-      out.innerHTML = '';
-      if(!topic){ out.innerHTML = '<li>Please enter a topic.</li>'; return; }
-      const hooks = [
-        `How ${topic} Saves 10 Hours/Week`,
-        `${topic}: A No-BS Starter Guide`,
-        `${topic} for SMEs: 7 Fast Wins`,
-        `${topic} Playbook: From Zero to Launch`,
-        `The Hidden Costs of ${topic} (and How to Avoid Them)`,
-        `${topic} Stack: Tools That Actually Matter`,
-        `Before/After: Teams Using ${topic}`,
-        `Mistakes We See in ${topic}`,
-        `ROI Math for ${topic}`,
-        `${topic} in 2025: What Changed?`
-      ];
-      hooks.forEach(h => {
-        const li = document.createElement('li');
-        li.textContent = h; out.appendChild(li);
-      });
-    }
-
-    function cleanText(){
-      const t = document.getElementById('text-in').value || '';
-      const cleaned = t.replace(/\s+\n/g, '\n').replace(/\n{3,}/g, '\n\n').replace(/\s{2,}/g, ' ').trim();
-      document.getElementById('text-out').value = cleaned;
-    }
-    function copyOut(){
-      const el = document.getElementById('text-out');
-      el.select(); document.execCommand('copy');
-      alert('Copied');
-    }
-  </script>
+    <p class="mt-6 text-xs text-gray-500">© <span id="y"></span> MyAITask. All rights reserved.</p>
+  </div>
+</footer>
+<script>document.getElementById('y').textContent=new Date().getFullYear()</script>
 </body>
 </html>
